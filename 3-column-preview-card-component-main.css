@@ -1,0 +1,254 @@
+/*police personalisée */
+
+@font-face{
+	font-family: 'lexend_deca';
+	src: url('police/lexend_deca/LexendDeca-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Big_Shoulders_Display';
+    src: url('police/big_shoulders_display/BigShouldersDisplay-Regular.eot');
+    src: url('police/big_shoulders_display/BigShouldersDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('police/big_shoulders_display/BigShouldersDisplay-Regular.woff2') format('woff2'),
+        url('police/big_shoulders_display/BigShouldersDisplay-Regular.woff') format('woff'),
+        url('police/big_shoulders_display/BigShouldersDisplay-Regular.ttf') format('truetype'),
+        url('police/big_shoulders_display/BigShouldersDisplay-Regular.svg#BigShouldersDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Big_Shoulders_Display_extra_bold';
+    src: url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBoldr.eot');
+    src: url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBold.woff2') format('woff2'),
+        url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBold.woff') format('woff'),
+        url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBold.ttf') format('truetype'),
+        url('police/big_shoulders_display_extra_bold/BigShouldersDisplay-ExtraBold.svg#BigShouldersDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Big_Shoulders_Display_bold';
+    src: url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.eot');
+    src: url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.woff2') format('woff2'),
+        url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.woff') format('woff'),
+        url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.ttf') format('truetype'),
+        url('police/big_shoulders_display_bold/BigShouldersDisplay-Bold.svg#BigShouldersDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*No default margin and padding*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+/*-------*/
+
+body
+{
+ background: hsl(0, 0%, 95%);
+}
+
+a
+{
+	text-decoration: none;
+	font-family: 'lexend_deca';
+	font-size: 15px;
+}
+
+body
+{
+	background: hsl(0, 0%, 95%);
+}
+
+p
+{
+	font-family: 'lexend_deca';
+	margin-top: 20px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-family: 'Big_Shoulders_Display_bold';
+	font-size: 36pt;
+	margin-top: 20px;
+	color: hsla(0, 0%, 100%, 0.60);
+}
+
+/*fix the position of the object*/
+
+.content 
+{
+	display: flex;
+	flex-direction: row;
+	width: 800px;
+	height: 500px;
+	margin: auto;
+	margin-top: 150px;
+}
+
+/*column format*/ 
+
+.sedans
+{
+	background: hsl(31, 77%, 52%);
+	border-radius: 20px 0 0 20px;
+	padding: 7%;
+	min-width: 175px;
+	height: 375px;
+
+}
+
+.suvs
+{
+	background: hsl(184, 100%, 22%);
+	padding: 7%;
+	min-width: 175px;
+	height: 375px;
+
+
+}
+
+.luxury
+{
+	background: hsl(179, 100%, 13%);
+	border-radius: 0 20px 20px 0;
+	padding: 7%;
+	min-width: 175px;
+	height: 375px;
+
+}
+
+/* buttons's appearence */
+
+.button
+{
+	background: hsl(0, 0%, 95%);
+	border: 2px hsl(0, 0%, 95%) solid;
+	border-radius: 20px;
+	width: 80% ;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 75px;
+	transition: .3s;
+	padding-top: 10px;
+	padding-bottom: 13px;
+}
+
+.sedans a
+{
+	color: hsl(31, 77%, 52%);
+}
+
+.sedans .button:hover a
+{
+	color: white;
+}
+
+.sedans .button:hover
+{
+	background: hsl(31, 77%, 52%);
+	color: hsl(0, 0%, 95%);
+	transition: .5s;
+}
+
+.suvs a
+{
+	color: hsl(184, 100%, 22%);
+}
+
+.suvs .button:hover a
+{
+	color: white;
+}
+
+.suvs .button:hover
+{
+	background: hsl(184, 100%, 22%);
+	color: hsl(0, 0%, 95%);
+	transition: .5s;
+}
+
+.luxury a
+{
+	color: hsl(179, 100%, 13%);
+}
+
+.luxury .button:hover a
+{
+	color: white;
+}
+
+.luxury .button:hover
+{
+	background: hsl(179, 100%, 13%);
+	color: hsl(0, 0%, 95%);
+	transition: .5s;
+}
+
+/* modification footer */
+
+.attribution
+{
+	font-family: 'lexend_deca';
+	font-size: 15px;
+	margin-top: 50px;
+}
+/* modification for the phone format*/
+
+@media (max-width: 950px){
+
+	.content{
+		flex-direction: column;
+		margin: auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		width: 350px;
+	}
+
+	.sedans
+	{
+		border-radius: 20px 20px 0 0 ;
+		min-height: 400px;
+	}
+
+	.suvs
+	{
+		min-height: 400px;
+	}
+
+
+	.luxury{
+		border-radius: 0 0 20px 20px;
+		min-height: 400px;
+	}
+
+	.text_sedans, .text_suvs, .text_luxury, .button
+	{
+		margin: 10%;
+	}
+
+	.button
+	{
+		width: 50%;
+	}
+
+	.attribution
+	{
+		display: none;
+	}
+
+
+}
